@@ -1,0 +1,12 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    }
+.container {
+  display: flex;
+  width: 100%;
+  background-color:brown;
+  justify-content: center;
+  color: white;
+}

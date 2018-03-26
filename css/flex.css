@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+}
+.container2 {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.first,
+.second,
+.third {
+  width: 10vw;
+  height: auto;
+  background-color: grey;
+  padding: 2.5vw;
+}
+.second {
+  background-color: blue;
+}
+.third {
+  background-color: red;
+}
+
+div:hover{
+    color:white;
+}
+body{
+    background-color:firebrick;
+}
+/*media queries */
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}

@@ -1,12 +1,47 @@
-html, body {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    }
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .container {
   display: flex;
   width: 100%;
-  background-color:brown;
   justify-content: center;
+  background-color:rgba(255,0,0,0.2);
+  padding:2vw;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  border-right: 1px solid #bbb;
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }

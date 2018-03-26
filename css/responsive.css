@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.left-div {
+  width: 25%;
+  height: 40vh;
+  float: left;
+  text-align: center;
+  background-image: url(../images/scene.jpeg);
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  transform: rotate(45deg);
+  transform-origin: 20% 40%;
+}
+.left-div > h1 {
+  color: white;
+}
+
+.left-div + h1 {
+  color: red;
+}
+.right-div {
+  width: 75%;
+  float: right;
+  text-align: center;
+  border-style: dotted solid;
+  text-shadow: 30, 20, 30, red;
+  background: linear-gradient(-90deg, yellow, green, blue, red);
+}
+
+h1 {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*animation */
+@keyframes color-change {
+  from {
+    background-color: rgb(37, 12, 128);
+  }
+  to {
+    color: #000;
+  }
+}
+
+body {
+  animation-name: color-change;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+}
